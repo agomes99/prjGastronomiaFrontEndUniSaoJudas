@@ -1,0 +1,104 @@
+<DOCTYPE html>
+	<html lang="pt-BR">
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Login Controle de Estoque</title>
+			 <link rel="stylesheet" href="css/bootstrap.css">
+			 <link rel="stylesheet" href="css/styleLogin.css">
+
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>		
+	</head>
+
+	<body>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4" id="corFundoladoEsq"></div>
+
+				<div class="col-md-4" id="corFundoCentral">
+
+					<img src="imagens/topo.png" width="100%"><br>
+					
+					<form action="inicio.html" method="post"><p>
+							<label for="login">Login:</label><br>
+							<input type="e-mail" placeholder="Digite seu CPF" name="login" class="form-control" required="required">
+						</p>
+
+						<p>
+							<label for="login">Senha:</label><br>
+							<input type="password" name="senha" class="form-control" required="required">
+						</p>
+								<div col-md-12>
+										
+										<a href="inicio.html"><input type="submit" value="Entrar" class=" btn btn-primary"></a> &nbsp;
+										
+
+
+
+
+
+				<button type="button" class="btn btn-link" data-toggle="modal" data-target="#tabelaEsqueceuSenha" id="corEsqueceuSenha"> Esqueceu sua senha? </button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="tabelaEsqueceuSenha" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								  <div class="modal-dialog modal-dialog-centered" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalCenterTitle">Insira seu e-mail</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body" id="CorNome">
+								      	
+								      	 E-mail<input type="text" class="form-control col-md-11 mx-sm-2" placeholder="exemplo@dominio.com">
+								        
+									
+								      </div>
+
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+								        <button type="button" class="btn btn-primary">Enviar</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+
+
+
+
+
+
+
+
+								</div>
+
+						</p>	
+					</form> 
+				</div>
+			</div>
+		</div>	
+			
+			<div class="col-md-4" id="corFundoLadoDir"></div>
+		
+	
+	
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4" id="corFundoladoEsq"></div>
+			<div class="col-md-4" id="corFundoRodape">
+				<center><img src="imagens/logoSaoJudasBranco2.png" width="100%"></center>
+			</div>
+			<div class="col-md-4" id="corFundoladoEsq"></div>
+		</div>
+	</div>
+
+</body>
+</html>
+

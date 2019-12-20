@@ -1,0 +1,31 @@
+/* Inicio do CSS tela de login - */
+body{
+font-family: arial;
+color: #fff;
+background-color: #004F92; /*Verificar a cor a ser utilizada #004F92 */
+}
+
+#corFundoLadoEsq{
+	background-color: #004F92;
+}
+#corFundoCentral{
+	background-color: #004F92;
+}
+
+#corFundoLadoDir{
+	background-color: #004F92; 
+}
+#corFundoRodape{
+	background-color: #004F92;
+}
+
+#corEsqueceuSenha{
+	color: #fff;
+}
+
+#corNome{
+	color: #000;
+}
+h5{
+	color: #000;
+}

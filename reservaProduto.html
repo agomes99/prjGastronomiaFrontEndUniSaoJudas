@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Cadastrar aula</title>
+	 <link rel="stylesheet" href="css/bootstrap.css">
+	 <link rel="stylesheet" href="css/style.css">
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<!-- MENU -->
+<header>		
+		<input type="checkbox" id="btn-menu">
+		<label for="btn-menu">&#9776;</label>		
+		<nav class="menu">
+		<div id="box-menu">	
+			<ul>
+				<li><a href="inicio.html" tabindex ="1"><img src="imagens/casa-verde.png"></a></li>
+				<li><a href="cadastroProdutos.html" tabindex =2>Cadastro de Produtos</a></li>
+				<li><a href="entradaProduto.html" tabindex ='3'>Entrada de produtos</a></li>
+				<li><a href="reservaProduto.html" tabindex ='4' id="corSelecionado">Cadastrar aula</a></li>
+				<li><a href="saida.html" tabindex ='5'>Saída de produtos</a></li>
+				<li><a href="receita.html" tabindex ='6'>Receita</a></li>
+				<li><a href="relatorio.html" tabindex ='7'>Relatorio</a></li>
+				<li><a href="usuario.html" tabindex ='8'>Usuario</a></li>
+				<li><a href="index.html" tabindex ='9'>Sair</a></li>
+
+			</ul>
+		</div>	
+		</nav>		
+</header>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    
+	    <div class="col-2" id="corFundoLadoEsq"></div>
+
+		    <div class="col-md-8" id="corFundoCentral">
+				<div class="jumbotron" id="corQuadro">
+			  			<form class="form-inline">
+							<div class="form-group">
+
+
+								Disciplina<sup><button type="button" class="btn btn-link" data-toggle="modal" data-target="#cadastrarDisciplina"><img src="imagens/+3.png" alt="Cadastrar nova Receita"></button></sup>
+								<!-- Modal -->
+								<div class="modal fade" id="cadastrarDisciplina" tabindex="-1" role="dialog" aria-labelledby="cadastrarDisciplina" aria-hidden="true">
+								  <div class="modal-dialog modal-dialog-centered" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalCenterTitle">Cadastrar e editar disciplina</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+								      	 Nome da disciplina<input type="text" class="form-control col-md-10 mx-sm-2"><button type="button" class="btn btn-primary">Adicionar</button>
+								      	 <hr>
+								        
+											<table class="table table-bordered table-light" id="corTable">
+														<thead id="corTr">
+														    <tr>
+														      <th><center>Disciplina</center></th>
+														      <th><center>Editar</center></th>
+														      <th><center>Remover</center></th>
+														    </tr>
+														</thead>
+
+														<tbody id="corTd">
+														    <tr>
+														      <td><center>Bebidas</center></td>
+														      <td><center><img src="imagens/engrenagem.png"></center></td>
+														      <td><center><img src="imagens/x.png"></center></td>					   
+														    </tr>
+														    <tr>
+														      <td><center>Sobremesa</center></td>		      
+														      <td><center><img src="imagens/engrenagem.png"></center></td>
+														      <td><center><img src="imagens/x.png"></center></td
+														    </tr>
+														    <tr>
+														      <td><center>Panificação</center></td>			
+														      <td><center><img src="imagens/engrenagem.png"></center></td>
+														      <td><center><img src="imagens/x.png"></center></td> 
+														    </tr>
+														  
+														</tbody>
+											</table>
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+								        <button type="button" class="btn btn-primary">Salvar</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+
+
+										<select class="form-control col-lg-3 mx-sm-1" id="Selecionardisciplina" required="required">
+											      <option>Selecione</option>
+											      <option>Bebidas</option>
+											      <option>Confeitaria</option>	      
+											      <option>Cozinha fria</option>
+											      <option>Panificação</option>
+											      <option>Sobremesa</option>
+											      <option>Técnicas de preparo de alimentos</option>
+										</select>&nbsp;&nbsp;
+
+
+
+
+
+								Professor(a)<input type="text" class="form-control col-md-4 mx-sm-2">
+								
+							</div>
+						</form><br>
+
+								
+						<form class="form-inline">
+							<div class="form-group">
+								Data<input type="date" class="form-control col-md-3 mx-sm-2">
+
+								Turma<input type="text" class="form-control col-md-3 mx-sm-2">
+								&nbsp;
+								Turno<select class="form-control col-md-2 mx-sm-3" id="nivelAcessoUsuario" required="required">
+										  <option>Selecione</option>
+									      <option>Manhã</option>
+									      <option>Tarde</option>
+									      <option>Noite</option>
+									 	</select>
+
+
+							</div>
+						</form><br>
+						Objetivo da aula<textarea class="form-control col-md-12" id="exampleFormControlTextarea1" rows="2"></textarea>
+
+						<hr>
+
+
+
+						<form class="form-inline">
+							 <div class="form-group">
+
+
+							 	Receita<input type="text" class="form-control col-md-3.8 mx-sm-2">
+
+								<button type="button" class="btn btn-link" data-toggle="modal" data-target="#tabelaPesquisarReceita">
+									Procurar <img src="imagens/lupa.png">	
+								</button> &nbsp;
+
+								<!-- Modal -->
+								<div class="modal fade" id="tabelaPesquisarReceita" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								  <div class="modal-dialog modal-dialog-centered" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalCenterTitle">Pesquisar receitas</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+								      	 Nome<input type="text" class="form-control col-md-10 mx-sm-2"><hr>
+								        
+											<table class="table table-bordered table-light" id="corTable">
+														<thead id="corTr">
+														    <tr>
+														      <th>Nome da receita</th>
+														    </tr>
+														</thead>
+
+														<tbody id="corTd">
+														    <tr>
+														      <td>Brigadeiro</td>					   
+														    </tr>
+														    <tr>
+														      <td>Hot-dog</td>				      
+														    </tr>
+														    <tr>
+														      <td>Pastel</td>				 
+														    </tr>
+														    <tr>
+														      <td>Brigadeiro</td>
+														    </tr>
+														    <tr>
+														      <td>Lasanha</td>
+														    </tr>														    
+														</tbody>
+											</table>
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+								        <button type="button" class="btn btn-primary">Selecionar</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+
+
+
+
+
+
+
+							 	Qtd. de receitas<input type="number" class="form-control col-md-2 mx-sm-2">
+							 </div>
+						</form><hr>
+
+
+						<form class="form-inline">
+							 <div class="form-group">
+
+							 	
+							 	 
+							  	  Produto<input type="text" class="form-control col-md-3 mx-sm-2">							  	  
+										<button type="button" class="btn btn-link" data-toggle="modal" data-target="#tabelaPesquisarProduto">
+										Procurar <img src="imagens/lupa.png"></button> &nbsp;
+											<!-- Modal -->
+											<div class="modal fade" id="tabelaPesquisarProduto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											  <div class="modal-dialog modal-dialog-centered" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <h5 class="modal-title" id="exampleModalCenterTitle">Pesquisar produto</h5>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>
+											      </div>
+											      <div class="modal-body">
+											      	 Nome<input type="text" class="form-control col-md-10 mx-sm-2"><hr>
+											        
+														<table class="table table-bordered table-light" id="corTable">
+																	<thead id="corTr">
+																	    <tr>
+																	      <th>Nome do produto</th>
+																	      <th>Quantidade disponivel</th>										      
+																	    </tr>
+																	</thead>
+
+																	<tbody id="corTd">
+																	    <tr>
+																	      <td>Manga</td>
+																	      <td>200</td>
+																	    </tr>
+																	    <tr>
+																	      <td>Banana</td>
+																	      <td>12</td>
+																	    </tr>
+																	    <tr>
+																	      <td>Feijão</td>
+																	      <td>03</td>
+																	    </tr>
+																	    <tr>
+																	      <td>Arroz</td>
+																	      <td>34</td>
+																	    </tr>
+																	    <tr>
+																	      <td>Macarrão</td>
+																	      <td>03</td>
+																	    </tr>														    
+																	</tbody>
+														</table>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+											        <button type="button" class="btn btn-primary">Selecionar</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+							  	  Quantidade<input type="number" class="form-control col-md-1 mx-sm-2">
+	
+	  								 <a href="#"><input type="button" value="Adicionar" class=" btn btn-primary"></a>
+
+
+
+							 </div>
+						</form>	<hr>
+
+						<table class="table table-bordered table-light" id="corTable">
+							<thead id="corTr">
+							    <tr>
+							      
+							      <th><center>Produto / Receita</center></th>
+							      <th><center>Quantidade</center></th>
+							      <th><center>Data</center></th>
+							      <th><center>Disciplina</center></th>
+							      <th><center>Editar</center></th>
+							      <th><center>Remover</center></th>
+							    </tr>
+							</thead>
+
+							<tbody id="corTd">
+							    <tr>
+							      
+							      <td><center>Laranja</center></td>
+							      <td><center>30</center></td>
+							      <td><center>18/04/2019</center></td>
+							      <td><center>Sobremesa</center></td>
+							      <td><center><img src="imagens/engrenagem.png"></center></td>
+							      <td><center><img src="imagens/x.png"></center></td>
+							    </tr>
+
+								<tr>							  
+							      <td><center>Manga</center></td>
+							      <td><center>20</center></td>
+							      <td><center>18/04/2019</center></td>
+							      <td><center>Sobremesa</center></td>
+							      <td><center><img src="imagens/engrenagem.png"></center></td>
+							      <td><center><img src="imagens/x.png"></center></td>
+							    </tr>
+
+								<tr>
+							      <td><center>Limao</center></td>
+							      <td><center>15</center></td>
+							      <td><center>18/04/2019</center></td>
+							      <td><center>Sobremesa</center></td>
+							      <td><center><img src="imagens/engrenagem.png"></center></td>
+							      <td><center><img src="imagens/x.png"></center></td>
+							    </tr>	
+
+								<tr>							      
+							      <td><center>Abacaxi</center></td>
+							      <td><center>15</center></td>
+							      <td><center>18/04/2019</center></td>
+							      <td><center>Sobremesa</center></td>
+							      <td><center><img src="imagens/engrenagem.png"></center></td>
+							      <td><center><img src="imagens/x.png"></center></td>
+							    </tr>	
+							</tbody>
+						</table>
+
+						<div align="right">
+								<button type="button" class="btn btn-danger" align="right">Cancelar</button>
+								<button type="button" class="btn btn-success" align="right">Salvar</button>
+						</div>
+		    </div>
+	  	</div>
+	  	<div class="col-2" id="corFundoLadoDir"></div>	
+ 	</div>
+</div>
+
+
+ 
+<!-- rodapé -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-4" id="corFundoladoEsq"></div>
+		<div class="col-md-4" id="corFundoRodape">
+			<center><img src="imagens/logoSaoJudasBranco2.png" width="100%"></center>
+		</div>
+		<div class="col-md-4" id="corFundoladoEsq"></div>
+	</div>
+</div>
+<!-- fim rodapé -->
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Saida</title>
+	 <link rel="stylesheet" href="css/bootstrap.css">
+	 <link rel="stylesheet" href="css/style.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<!-- MENU -->
+<header>		
+		<input type="checkbox" id="btn-menu">
+		<label for="btn-menu">&#9776;</label>		
+		<nav class="menu">
+		<div id="box-menu">	
+			<ul>
+				<li><a href="inicio.html" tabindex ="1"><img src="imagens/casa-verde.png"></a></li>
+				<li><a href="cadastroProdutos.html" tabindex =2>Cadastro de Produtos</a></li>
+				<li><a href="entradaProduto.html" tabindex ='3'>Entrada de produtos</a></li>
+				<li><a href="reservaProduto.html" tabindex ='4'>Cadastrar aula</a></li>
+				<li><a href="saida.html" tabindex ='5' id="corSelecionado">Saída de produtos</a></li>
+				<li><a href="receita.html" tabindex ='6'>Receita</a></li>
+				<li><a href="relatorio.html" tabindex ='7'>Relatorio</a></li>
+				<li><a href="usuario.html" tabindex ='8'>Usuario</a></li>
+				<li><a href="index.html" tabindex ='9'>Sair</a></li>
+
+			</ul>
+		</div>	
+		</nav>		
+</header>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-2" id="corFundoLadoEsq">
+    </div>
+
+    <div class="col-md-8" id="corFundoCentral">
+
+
+
+<div class="jumbotron" id="corQuadro">
+				
+
+
+		<form class="form-inline">
+					  <div class="form-group">						  	
+					  		Produto ou receita<input type="text" class="form-control col-md-2 mx-sm-1">
+					  		<button type="button" class="btn btn-link" data-toggle="modal" data-target="#tabelaPesquisarProduto"><img src="imagens/lupa.png"></button>
+										<!-- Modal -->
+										<div class="modal fade" id="tabelaPesquisarProduto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										  <div class="modal-dialog modal-dialog-centered" role="document">
+										    <div class="modal-content">
+										      <div class="modal-header">
+										        <h5 class="modal-title" id="exampleModalCenterTitle">Pesquisar produto ou receita</h5>
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										          <span aria-hidden="true">&times;</span>
+										        </button>
+										      </div>
+										      <div class="modal-body">
+
+												Nome<input type="text" class="form-control col-md-8 mx-sm-3 "><hr>
+														<table class="table table-bordered table-light" id="corTable">
+																					<thead id="corTr">
+																					    <tr>
+																					      <th><center>Produto / Receita</center></th>
+																					      <th><center>Quantidade disponivel</center></th>	     
+																					    </tr>
+																					</thead>
+
+																					<tbody id="corTd">
+																					    <tr>							      
+																					      <td><center>Laranja</center></td>
+																					      <td><center>30</center></td>			     
+																					    </tr>
+
+																						<tr>							      
+																					      <td><center>Manga</center></td>
+																					      <td><center>20</center></td>
+																					    </tr>
+
+																						<tr>
+																						  <td><center>Limao</center></td>
+																					      <td><center>15</center></td>					
+																					    </tr>	
+
+																						<tr>							      
+																					      <td><center>Lasanha</center></td>
+																					      <td><center>15</center></td>
+																					    </tr>
+
+
+																					    <tr>							      
+																					      <td><center>Brigadeiro</center></td>
+																					      <td><center>02</center></td>				
+																					    </tr>	
+																					   
+																					</tbody>
+														</table>
+										      </div>
+										      <div class="modal-footer">
+										        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+										        <button type="button" class="btn btn-primary">Selecionar</button>
+										      </div>
+
+										    </div>
+										  </div>
+										</div>
+
+
+
+
+						    Qtd.<input type="number" class="form-control col-md-1 mx-sm-1">		  	 			  			&nbsp;&nbsp;		
+							Disciplina
+								<select class="form-control col-lg-1 mx-sm-2" id="Selecionardisciplina" required="required">
+								      <option>Selecione</option>
+								      <option>Bebidas</option>
+								      <option>Confeitaria</option>	      
+								      <option>Cozinha fria</option>
+								      <option>Panificação</option>
+								      <option>Técnicas de preparo de alimentos</option>
+								</select>
+ 							
+					  </div>
+		</form><br>
+
+
+	  	<form class="form-inline">
+					  <div class="form-group">											  	    
+					  	    Professor<input type="text" class="form-control col-md-3 mx-sm-2">
+ 							Motivo
+
+
+												<select class="form-control col-md-3 mx-sm-2" id="motivoSaida" required="required">
+												      <option>Selecione</option>
+												      <option>Esquecimento do professor</option>
+												      <option>Falta de tempo do professor</option>				
+												      <option>Quantidade solicitada menor que a prevista</option>
+												      <option>Substituição emergencial</option>
+												      <option>Fornecedor não entregou</option>
+												      <option>Outros</option>
+
+												</select>&nbsp;&nbsp;
+
+
+							<a href="#"><input type="button" value="Adicionar" class=" btn btn-primary"></a>	
+
+
+
+
+
+					  </div> 		
+		</form>	 <br>													  	    
+					  	    Descreva o motivo <textarea class="form-control col-md-12" id="motivoSaidaNaoProgramada" rows="2"></textarea>
+					  	    
+					 	 <hr>	
+
+
+		<table class="table table-bordered table-light" id="corTable">
+					<thead id="corTr">
+					    <tr>					      
+					      <th><center>Produto / Receita</center></th>
+					      <th><center>Quantidade</center></th>
+					      <th><center>Disciplina</center></th>
+					      <th><center>Editar</center></th>
+					      <th><center>Remover</center></th>
+					    </tr>
+					</thead>
+
+					<tbody id="corTd">
+					    <tr>					      
+					      <td><center>Laranja</center></td>
+					      <td><center>30</center></td>
+					      <td><center>Sobremesas</center></td>
+					      <td><center><img src="imagens/engrenagem.png"></center></td>
+					      <td><center><img src="imagens/x.png"></center></td>
+					    </tr>
+
+						<tr>					      
+					      <td><center>Manga</center></td>
+					      <td><center>20</center></td>
+					      <td><center>Sobremesas</center></td>
+					      <td><center><img src="imagens/engrenagem.png"></center></td>
+					      <td><center><img src="imagens/x.png"></center></td>
+					    </tr>						
+					</tbody>
+		</table>
+
+
+
+
+
+	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#produtosReservados">Retirar Produtos Reservados</button>
+										<!-- Modal -->
+										<div class="modal fade" id="produtosReservados" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										  <div class="modal-dialog modal-dialog-centered" role="document">
+										    <div class="modal-content">
+										      <div class="modal-header">
+										       
+										        <h5 class="modal-title" id="exampleModalCenterTitle">Pesquisar produtos reservados</h5>
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										          <span aria-hidden="true">&times;</span>
+										        </button>
+										      </div>
+										      <div class="modal-body">
+
+												Nome<input type="text" class="form-control col-md-7 mx-sm-3 ">
+
+Data<input type="date" class="form-control col-md-7 mx-sm-3">
+<br>
+<button type="button" class="btn btn-primary btn-sm col-12 mx sm-1">Buscar</button>
+
+												<hr>
+														<table class="table table-bordered table-light" id="corTable">
+																					<thead id="corTr">
+																					    <tr>
+																					      <th><center>Data da aula</center></th>
+																					      <th><center>Produto</center></th> 
+																					      <th><center>Periodo</center></th> 
+																					      <th><center>Retirar</center></th>  	     
+																					    </tr>
+																					</thead>
+
+																					<tbody id="corTd">
+																					    <tr>							      
+																					      <td><center>30/04/2019</center></td>		
+																					      <td><center>Manga</center></td>
+																					      <td><center>Noite</center></td>
+																					      <td><center><a href="">Retirar</a></center></td>    
+																					    </tr>
+
+																					   <tr>							      
+																					      <td><center>30/05/2019</center></td>		
+																					      <td><center>Banana</center></td>
+																					      <td><center>Noite</center></td>
+																					      <td><center><a href="">Retirar</a></center></td>    
+																					    </tr>
+
+																						
+																					     <tr>							      
+																					      <td><center>30/06/2019</center></td>		
+																					      <td><center>Cebola</center></td>
+																					      <td><center>Noite</center></td>
+																					      <td><center><a href="">Retirar</a></center></td>    
+																					    </tr>
+
+
+																					</tbody>
+														</table>
+										      </div>
+
+											<div class="modal-footer">
+										        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+										        <button type="button" class="btn btn-primary">Retirar tudo</button>
+										     </div>
+
+										    </div>
+										  </div>
+										</div>
+
+
+
+
+
+
+
+
+		<button type="button" class="btn btn-danger" align="right">Cancelar</button>
+		<button type="button" class="btn btn-success" align="right">Salvar</button>
+
+
+
+    </div>
+ 
+   
+  </div>
+   <div class="col-2" id="corFundoLadoDir"></div>
+ </div>
+</div>
+
+<!-- rodapé -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-4" id="corFundoladoEsq"></div>
+		<div class="col-md-4" id="corFundoRodape">
+			<center><img src="imagens/logoSaoJudasBranco2.png" width="100%"></center>
+		</div>
+		<div class="col-md-4" id="corFundoladoEsq"></div>
+	</div>
+</div>
+<!-- fim rodapé -->
+
+
+</body>
+
+</html>
+

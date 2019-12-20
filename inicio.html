@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Inicio</title>
+	 <link rel="stylesheet" href="css/bootstrap.css">
+	 <link rel="stylesheet" href="css/style.css">
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+ 
+
+
+<!-- MENU -->
+<header>		
+		<input type="checkbox" id="btn-menu">
+		<label for="btn-menu">&#9776;</label>		
+		<nav class="menu">
+		<div id="box-menu">	
+			<ul>
+				<li><a href="inicio.html" tabindex ="1" id="corSelecionado"><img src="imagens/casa-verde.png"></a></li>
+				<li><a href="cadastroProdutos.html" tabindex ='2'>Cadastro de Produtos</a></li>
+				<li><a href="entradaProduto.html" tabindex ='3'>Entrada de produtos</a></li>
+				<li><a href="reservaProduto.html" tabindex ='4' class=botao>Cadastrar aula</a></li>
+				<li><a href="saida.html" tabindex ='5'>Saída de produtos</a></li>
+				<li><a href="receita.html" tabindex ='6'>Receita</a></li>
+				<li><a href="relatorio.html" tabindex ='7'>Relatorio</a></li>
+				<li><a href="usuario.html" tabindex ='8'>Usuario</a></li>
+				<li><a href="index.html" tabindex ='9'>Sair</a></li>
+			</ul>
+		</div>	
+		</nav>		
+</header>
+
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-2" id="corFundoLadoEsq">
+    </div>
+
+    <div class="col-md-8" id="corFundoCentral">
+      <br>
+	
+		<div class="jumbotron" id="corQuadro">
+
+			<center><p><img src="imagens/chapeuPreto.png" width="15%"></p></center>
+
+			<center><h3>Controle de estoque São Judas</h3></center><br>
+
+
+						<form class="form-inline">
+							  <div class="form-group">							  
+							 		Nome do Produto<input type="text" class="form-control col-lg-5.90 mx-sm-1 ">
+
+									<!--<a href="">Procurar <img src="imagens/lupa.png" data-toggle="modal" data-target="#exampleModalCenter" ></a> -->
+							  		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tabelaPesquisarProduto">Pesquisar <img src="imagens/lupa.png"></button>
+
+							  			&nbsp;Ordenar:<select class="form-control col-lg-2 mx-sm-1" id="motivoSaida" required="required">
+												      
+												      <option>Selecione</option>
+												      <option>A - Z</option>	
+												      <option>Z - A</option>	
+												      <option>Maior quantidade</option> 
+												      <option>Menor quantidade</option>
+												      
+												      
+
+												</select>
+
+
+
+
+										<!-- Modal -
+										<div class="modal fade" id="tabelaPesquisarProduto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										  <div class="modal-dialog modal-dialog-centered" role="document">
+										    <div class="modal-content">
+										      <div class="modal-header">
+										        <h5 class="modal-title" id="exampleModalCenterTitle">Pesquisar Produto</h5>
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										          <span aria-hidden="true">&times;</span>
+										        </button>
+										      </div>
+										      <div class="modal-body">
+
+												Nome<input type="text" class="form-control col-md-8 mx-sm-3 "><hr>
+														<table class="table table-bordered table-light" id="corTable">
+																					<thead id="corTr">
+																					    <tr>
+																					      <th><center>Produto</center></th>
+																					      <th><center>Qtd.total</center></th>
+																					      <th><center>Qtd.reservada</center></th>
+																					      <th><center>Qtd.disponivel</center></th>	     
+																					    </tr>
+																					</thead>
+
+																					<tbody id="corTd">
+																					    <tr>							      
+																					      <td><center>Laranja</center></td>
+																					      <td><center>30</center></td>
+																					      <td><center>10</center></td>
+																					      <td><center>20</center></td>				     
+																					    </tr>
+
+																						<tr>							      
+																					      <td><center>Manga</center></td>
+																					      <td><center>20</center></td>
+																					      <td><center>10</center></td>
+																					      <td><center>10</center></td>				      
+																					    </tr>
+
+																						<tr>
+																						  <td><center>Limao</center></td>
+																					      <td><center>15</center></td>			
+																					      <td><center>10</center></td>
+																					      <td><center>5</center></td>		      		
+																					    </tr>	
+
+																						<tr>							      
+																					      <td><center>Cebola</center></td>
+																					      <td><center>15</center></td>
+																					      <td><center>10</center></td>
+																					      <td><center>05</center></td>					  
+																					    </tr>
+
+
+																					    <tr>							      
+																					      <td><center>Creme de leite</center></td>
+																					      <td><center>02</center></td>
+																					      <td><center>02</center></td>
+																					      <td><center>00</center></td>				
+																					    </tr>	
+																					   
+																					</tbody>
+														</table>
+										      </div>
+										      <div class="modal-footer">
+										        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+										        <button type="button" class="btn btn-primary">Selecionar</button>
+										      </div>
+
+										    </div>
+										  </div>
+										</div> -->
+							  </div>
+						</form>
+				<br>	
+
+				<table class="table table-bordered table-light col-md-12" id="corTable">
+							<thead id="corTr">
+							    <tr>
+							      <th><center>Produto</center></th>
+							      <th><center>Qtd. total</center></th>
+							      <th><center>Qtd. reservada</center></th>
+							      <th><center>Qtd. disponivel</center></th>
+							    </tr>
+							</thead>
+
+							<tbody id="corTd">
+							    <tr>							      
+							      <td><center>Laranja</center></td>
+							      <td><center>30</center></td>
+							      <td><center>10</center></td>
+							      <td><center>20</center></td>
+							    </tr>
+
+								<tr>							      
+							      <td><center>Manga</center></td>
+							      <td><center>20</center></td>
+							      <td><center>10</center></td>
+							      <td><center>10</center></td>
+							    </tr>
+
+								<tr>
+								  <td><center>Limao</center></td>
+							      <td><center>15</center></td>			
+							      <td><center>10</center></td>
+							      <td><center>5</center></td>		      
+							    </tr>	
+
+								<tr>							      
+							      <td><center>Cebola</center></td>
+							      <td><center>15</center></td>
+							      <td><center>10</center></td>
+							      <td><center>05</center></td>
+							    </tr>
+
+
+							    <tr>							      
+							      <td><center>Creme de leite</center></td>
+							      <td><center>02</center></td>
+							      <td><center>02</center></td>
+							      <td><center>00</center></td>
+							    </tr>	
+							</tbody>
+				</table>
+
+
+			
+				<nav aria-label="arial">
+				  <ul class="pagination">
+				    <li class="page-item disabled">
+				      <span class="page-link">Anterior</span>
+				    </li>
+				    <li class="page-item"><a class="page-link" href="#">1</a></li>
+				    <li class="page-item active" aria-current="page">
+				      <span class="page-link">
+				        2
+				        <span class="sr-only">(current)</span>
+				      </span>
+				    </li>
+				    <li class="page-item"><a class="page-link" href="#">3</a></li>
+				    <li class="page-item">
+				      <a class="page-link" href="#">Próximo</a>
+				    </li>
+				  </ul>
+				</nav>
+			
+
+
+
+		    </div>
+		 
+
+	    
+		 </div>
+		 	<div class="col-2" id="corFundoLadoDir"></div>
+		</div>
+
+
+
+
+
+<!-- rodapé -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-4" id="corFundoladoEsq"></div>
+		<div class="col-md-4" id="corFundoRodape">
+			<center><img src="imagens/logoSaoJudasBranco2.png" width="100%"></center>
+		</div>
+		<div class="col-md-4" id="corFundoladoEsq"></div>
+	</div>
+</div>
+<!-- fim rodapé -->
+
+
+
+
+</body>
+
+</html>
+

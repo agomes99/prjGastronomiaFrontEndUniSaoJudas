@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Usuario</title>
+	 <link rel="stylesheet" href="css/bootstrap.css">
+	 <link rel="stylesheet" href="css/style.css">
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<!-- MENU -->
+<header>		
+		<input type="checkbox" id="btn-menu">
+		<label for="btn-menu">&#9776;</label>		
+		<nav class="menu">
+		<div id="box-menu">	
+			<ul>
+				<li><a href="inicio.html" tabindex ="1"><img src="imagens/casa-verde.png"></a></li>
+				<li><a href="cadastroProdutos.html" tabindex =2>Cadastro de Produtos</a></li>
+				<li><a href="entradaProduto.html" tabindex ='3'>Entrada de produtos</a></li>
+				<li><a href="reservaProduto.html" tabindex ='4'>Cadastrar aula</a></li>
+				<li><a href="saida.html" tabindex ='5'>Saída de produtos</a></li>
+				<li><a href="receita.html" tabindex ='6'>Receita</a></li>
+				<li><a href="relatorio.html" tabindex ='7'>Relatorio</a></li>
+				<li><a href="usuario.html" tabindex ='8' id="corSelecionado">Usuario</a></li>
+				<li><a href="index.html" tabindex ='9'>Sair</a></li>
+
+			</ul>
+		</div>	
+		</nav>		
+</header>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-2" id="corFundoLadoEsq">
+    </div>
+
+    <div class="col-md-8" id="corFundoCentral">
+
+
+
+			<div class="jumbotron" id="corQuadro">
+							
+			
+
+					<form class="form">
+					 	<p>
+						  Nome<input type="text" class="form-control col-10 mx-sm-2" placeholder="Nome do funcionario" required="required
+						  ">
+						</p>  
+						<p>			  
+						  E-mail<input type="E-mail" class="form-control col-10 mx-sm-2" placeholder="insira o e-mail" required="required
+						  ">
+						</p>
+						<p>
+						  Nº do CPF<input type="text" class="form-control col-10 mx-sm-2" placeholder="Nº de CPF do funcionario" required="required
+						  ">
+						</p>
+						<p>
+						  Senha<input type="password" class="form-control col-10 mx-sm-2" placeholder="Insira uma senha" required="required
+						  ">
+						</p>  
+						<p>
+						  Confirme a Senha<input type="password" class="form-control col-10 mx-sm-2" placeholder="confirme a senha" required="required
+						  ">
+						</p>
+						<p>
+						   Nivel de usuário <select class="form-control col-10 mx-sm-2" id="nivelAcessoUsuario" required="required">
+						      <option>Administrador(a)</option>
+						      <option>Professor(a)</option>
+						      <option>Usuário(a)</option>
+						 </select>
+
+
+						</p>  
+					</form>	
+
+<center><a href="#"><input type="button" value="Cadastrar" class=" btn btn-primary"></a></center>
+
+			</div>
+	</div>
+
+  <div class="col-2" id="corFundoLadoDir"></div>
+  
+ </div>
+</div>
+
+<!-- rodapé -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-4" id="corFundoladoEsq"></div>
+		<div class="col-md-4" id="corFundoRodape">
+			<center><img src="imagens/logoSaoJudasBranco2.png" width="100%"></center>
+		</div>
+		<div class="col-md-4" id="corFundoladoEsq"></div>
+	</div>
+</div>
+<!-- fim rodapé -->
+
+
+</body>
+
+</html>
+

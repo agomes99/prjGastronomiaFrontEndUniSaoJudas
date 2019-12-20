@@ -1,0 +1,149 @@
+/* Inicio do CSS para Deskyop - */
+body{
+font-family: arial;
+color: #004F92;
+background-color: #004F92; 
+ 
+}
+
+#corFundoLogo{
+	color: #fff;
+	background-color: #004F92
+}
+
+#corSelecionado{
+	background-color: #0088cc;
+}
+
+#corFundoLadoEsq{
+	background-color: #004F92;
+}
+#corFundoCentral{
+	background-color: #004F92;
+}
+
+#corFundoLadoDir{
+	background-color: #004F92; 
+}
+#corFundoRodape{
+	background-color: #004F92;
+}
+
+#btn-menu{
+	display: none;
+}
+
+
+/* propriedades da tabela */
+
+	#corTable{
+		background-color: #9fbe17;
+	}
+	#corTr{
+		color: #fff;
+		background-color: #004f92;
+	} 
+	#corTd{
+		color: #fff;
+		background-color: #9fbe17;
+	} 
+
+	#corModoPreparo{
+		color: #fff;
+		background-color:#004f92; 
+	}
+/*propriedades do quadro */	
+
+		#corQuadro{
+			background-color: #f2f2f2;
+		}
+
+		#CorTopoJumbotron{
+			background-color: #99cc00;
+		}
+
+
+header{
+	background-color: #9fbe17; /* #99cc00 */
+	font-weight: 600;
+
+}
+
+
+header label {
+	color: #fff;
+	font-size: 25px;
+	display: block;
+	padding: 5px 10px;
+	width: 50%;
+	border-right:  0px solid #efefef;
+	display: none;
+}
+
+/* COR DA SELEÇÃO DO BOTÃO PARA TELA MOBILE */
+header label:hover {
+	background-color: #99cc00;
+} 
+
+
+/* Propriedades do menu */
+.menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+	align-content: left;
+	align-self: left;
+	align-items: left;
+	text-align: left;
+	alignment-baseline: left;
+}
+
+
+.menu a:active{
+	background-color: #AABBFF;
+}
+
+.menu li a{
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;		
+}
+
+/* cor de seleção do menu*/
+.menu li a:hover{
+	background-color: #0088cc;
+} 
+
+/*campo assumido em tela reduzida */
+@media(max-width: 576px){
+		header label{
+			display: block;
+		}
+		.menu ul{
+			position: absolute;
+			background-color:#006699;
+			width: 55%;
+			flex-direction: column;
+			margin-left: -55%;
+			transition: all .6s;
+			z-index:500
+		}
+
+	.menu li a{
+		border-top: 1px solid #0088cc;
+	}
+	#btn-menu:checked ~ .menu ul{
+		margin-left: 0;
+	}
+}
